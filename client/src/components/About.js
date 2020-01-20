@@ -3,10 +3,10 @@ import React, { Fragment } from 'react'
 const About = () => {
     return (
         <Fragment>
-            <div class="container mt-5 mb-3">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h3 class="mb-3">About Us</h3>
+            <div className="container mt-5 mb-3">
+                <div className="row">
+                    <div className="col-sm-8">
+                        <h3 className="mb-3">About Us</h3>
                         <p>
                             is an Incorporated Company with the Corporate Affairs Commission
                             (RC. 718619) with our Head Office at 8, Kasali Street Itire, Lagos
@@ -32,8 +32,8 @@ const About = () => {
                             Dangote Group.
           </p>
                     </div>
-                    <div class="col-sm-4 mt-4">
-                        <h6 class="mb-3">Our Core Values</h6>
+                    <div className="col-sm-4 mt-4">
+                        <h6 className="mb-3">Our Core Values</h6>
                         <ul>
                             <li>Customer focus</li>
                             <li>Innovation and creativity</li>
@@ -46,10 +46,10 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div class="container mb-4">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h6 class="mb-3">Our Vision</h6>
+            <div className="container mb-4">
+                <div className="row">
+                    <div className="col-sm-6">
+                        <h6 className="mb-3">Our Vision</h6>
                         <ul>
                             <li>To be a reference point in all our professional fields.</li>
                             <li>
@@ -67,7 +67,7 @@ const About = () => {
             </li>
                         </ul>
                     </div>
-                    <div class="col-sm-6">
+                    <div className="col-sm-6">
                         <img src="https://res.cloudinary.com/dnmaekeqy/image/upload/v1579358489/Picture1_nrhbqc.png" alt="Kadna logo" />
                     </div>
                 </div>

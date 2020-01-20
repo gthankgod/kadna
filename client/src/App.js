@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import { BrowserRouter as Router, Link, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Navbar from './components/Navbar';
 import Landing from './components/Landing';
@@ -15,10 +15,10 @@ function App() {
       <Fragment>
         <Navbar />
         <Switch>
-          <Link exact path="/" component={Landing} />
-          <Link exact path="/about" component={About} />
-          <Link exact path="/services" component={Services} />
-          <Link exact path="/team" component={Team} />
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/services" component={Services} />
+          <Route exact path="/team" component={Team} />
         </Switch>
         <Footer />
       </Fragment>
