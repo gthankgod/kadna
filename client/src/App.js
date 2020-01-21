@@ -8,6 +8,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Services from './components/Services';
 import Team from './components/Team';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route exact path="/services" component={Services} />
           <Route exact path="/team" component={Team} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
         <Footer />
       </Fragment>
