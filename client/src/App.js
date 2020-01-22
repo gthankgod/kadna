@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Services from './components/Services';
 import Team from './components/Team';
 import Contact from './components/Contact';
+import Careers from './components/Careers';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/services" component={Services} />
           <Route exact path="/team" component={Team} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/careers" component={Careers} />
         </Switch>
         <Footer />
       </Fragment>

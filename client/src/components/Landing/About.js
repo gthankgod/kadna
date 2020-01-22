@@ -19,8 +19,7 @@ const About = () => {
                             transporting, maintenance &amp; general merchants. Our experience also
                             covers business of Quarrying, Stone and Granite supplies, interior
                             and exterior decorations, Providing loaders for manufacturing
-                company etc.<br /><br />
-                            <Link to="/about" className="btn btn-outline-success">Read More</Link>
+                company etc. <br /><Link to="/about" className="btn btn-link p-0">Read More...</Link>
                         </p>
                     </div>
                     <div className="col-sm-4 mt-4">
