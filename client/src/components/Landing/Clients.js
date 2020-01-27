@@ -17,7 +17,7 @@ const Clients = () => {
                 {
                     state.map(image => {
                         return (
-                            <div className="col-sm-3" key={image.id}>
+                            <div className="col-sm-3 mb-3" key={image.id}>
                                 <img src={image.imgUrl} className="img-fluid" alt="" />
                             </div>
                         )

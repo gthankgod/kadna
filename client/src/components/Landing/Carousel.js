@@ -1,35 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Carousel = () => {
+    const [state, setState] = useState([
+        { id: 0, image: 'https://res.cloudinary.com/dnmaekeqy/image/upload/v1579352923/images_18_mwrkzc.jpg', title: 'Construction', className: 'carousel-item active' },
+        { id: 1, image: 'https://res.cloudinary.com/dnmaekeqy/image/upload/v1579352924/images_27_ep68md.jpg', title: 'Swimming Pool Construction', className: 'carousel-item' },
+        { id: 2, image: 'https://res.cloudinary.com/dnmaekeqy/image/upload/v1579366916/images_35_fljibj.jpg', title: 'Loading Company', className: 'carousel-item' },
+        { id: 3, image: 'https://res.cloudinary.com/dnmaekeqy/image/upload/v1579352925/images_25_zcrv08.jpg', title: 'Agricultural Farming', className: 'carousel-item' },
+        { id: 4, image: 'https://res.cloudinary.com/dnmaekeqy/image/upload/v1579352922/images_21_n9uvmf.jpg', title: 'Estate Management', className: 'carousel-item' },
+        { id: 5, image: 'https://res.cloudinary.com/dnmaekeqy/image/upload/v1579352924/images_23_plp3gr.jpg', title: 'Import and Export', className: 'carousel-item' },
+        { id: 6, image: 'https://res.cloudinary.com/dnmaekeqy/image/upload/v1579352924/images-26-1_rjpv0y.jpg', title: 'Hotel Management', className: 'carousel-item' },
+    ]);
     return (
         <div id="carouselExampleIndicators" className="carousel slide mb-3" data-ride="carousel">
             <ol className="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to={0} className="active" />
-                <li data-target="#carouselExampleIndicators" data-slide-to={1} />
-                <li data-target="#carouselExampleIndicators" data-slide-to={2} />
+                {
+                    state.map(service => {
+                        let val = service.id;
+                        return (
+                            <li data-target="#carouselExampleIndicators" data-slide-to={val} className={service.id === 0 ? "active" : ""} />
+                        )
+                    })
+                }
             </ol>
             <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <img src="https://res.cloudinary.com/dnmaekeqy/image/upload/v1579352923/images_18_mwrkzc.jpg" alt="Construction" style={{ width: '100%', height: '100%' }} />
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>Construction</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, iste?</p>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img src="https://res.cloudinary.com/dnmaekeqy/image/upload/v1579352924/images_27_ep68md.jpg" alt="Swimming Pool" style={{ width: '100%', height: '100%' }} />
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>Swimming Pool Construction</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam.</p>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img src="https://res.cloudinary.com/dnmaekeqy/image/upload/v1579352925/images_25_zcrv08.jpg" alt="Loaders" style={{ width: '100%', height: '100%' }} />
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>Loading Company</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, similique.</p>
-                    </div>
-                </div>
+                {
+                    state.map(service => {
+                        return (
+                            <div className={service.className} key={service.id}>
+                                <img src={service.image} alt="Construction" style={{ width: '100%', height: '90vh' }} />
+                                <div className="carousel-caption d-none d-md-block">
+                                    <h5>{service.title}</h5>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
             </div>
             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true" />
