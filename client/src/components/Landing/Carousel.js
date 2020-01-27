@@ -27,7 +27,7 @@ const Carousel = () => {
                     state.map(service => {
                         return (
                             <div className={service.className} key={service.id}>
-                                <img src={service.image} alt="Construction" style={{ width: '100%', height: '90vh' }} />
+                                <img src={service.image} alt="Construction" style={{ width: '100%' }} />
                                 <div className="carousel-caption d-none d-md-block">
                                     <h5>{service.title}</h5>
                                 </div>
