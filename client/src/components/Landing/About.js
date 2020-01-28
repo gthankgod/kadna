@@ -23,7 +23,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className="col-sm-4 mt-4">
-                        <h6 className="mb-3">Our Core Values</h6>
+                        <h6 className="mb-3 lead">Our Core Values</h6>
                         <ul>
                             <li>Customer focus</li>
                             <li>Innovation and creativity</li>
@@ -39,7 +39,7 @@ const About = () => {
             <div className="container mb-4">
                 <div className="row">
                     <div className="col-sm-6">
-                        <h6 className="mb-3">Our Vision</h6>
+                        <h6 className="mb-3 lead">Our Vision</h6>
                         <ul>
                             <li>To be a reference point in all our professional fields.</li>
                             <li>

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <Link to="/" className="navbar-brand"> KADNA VENTURES LTD</Link>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-2">
+            <Link to="/" className="navbar-brand lead"> Kadna Ventures Ltd</Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon" />
             </button>
@@ -20,10 +20,10 @@ const Navbar = () => {
                         <Link to="/team" className="nav-link">Our Team</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/contact" className="nav-link">Contact Us</Link>
+                        <Link to="/careers" className="nav-link">Careers</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/careers" className="nav-link">Careers</Link>
+                        <Link to="/contact" className="nav-link">Contact Us</Link>
                     </li>
                 </ul>
             </div>
