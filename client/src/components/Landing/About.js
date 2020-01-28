@@ -7,7 +7,7 @@ const About = () => {
             <div className="container mt-5 mb-3">
                 <div className="row">
                     <div className="col-sm-8">
-                        <h3 className="mb-3">About Us</h3>
+                        <h3 className="display-4 mb-3">About Us</h3>
                         <p>
                             KADNA Ventures is an Incorporated Company with the Corporate Affairs Commission
                             (RC. 718619) with our Head Office at 8, Kasali Street Itire, Lagos

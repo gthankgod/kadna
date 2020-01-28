@@ -6,9 +6,9 @@ const About = () => {
             <div className="container mt-5 mb-3">
                 <div className="row">
                     <div className="col-sm-8">
-                        <h3 className="mb-3">About Us</h3>
+                        <h3 className="display-3 mb-3">About Us</h3>
                         <p>
-                            is an Incorporated Company with the Corporate Affairs Commission
+                            Kadna Ventures Limited is an Incorporated Company with the Corporate Affairs Commission
                             (RC. 718619) with our Head Office at 8, Kasali Street Itire, Lagos
                             and Branches at KSK Hotel and Event Center Alakia Ibadan and Benin
             Republic .<br />
@@ -33,7 +33,7 @@ const About = () => {
           </p>
                     </div>
                     <div className="col-sm-4 mt-4">
-                        <h6 className="mb-3">Our Core Values</h6>
+                        <h6 className="my-3">Our Core Values</h6>
                         <ul>
                             <li>Customer focus</li>
                             <li>Innovation and creativity</li>

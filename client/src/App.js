@@ -10,24 +10,31 @@ import Services from './components/Services';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import Careers from './components/Careers';
+import Service from './components/Service';
+import TeamContextProvider from './contexts/TeamContext';
+import ServiceContextProvider from './contexts/ServiceContext';
 
 function App() {
   return (
-    <Router>
-      <Fragment>
-        <Navbar />
-        <Switch>
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/services" component={Services} />
-          <Route exact path="/team" component={Team} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/careers" component={Careers} />
-        </Switch>
-        <Footer />
-      </Fragment>
-    </Router>
-
+    <ServiceContextProvider>
+      <TeamContextProvider>
+        <Router>
+          <Fragment>
+            <Navbar />
+            <Switch>
+              <Route exact path="/" component={Landing} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/services" component={Services} />
+              <Route exact path="/service/:service" component={Service} />
+              <Route exact path="/team" component={Team} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/careers" component={Careers} />
+            </Switch>
+            <Footer />
+          </Fragment>
+        </Router>
+      </TeamContextProvider>
+    </ServiceContextProvider>
   );
 }
 
