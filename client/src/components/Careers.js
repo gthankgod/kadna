@@ -5,7 +5,7 @@ import { Fragment } from 'react'
 const Careers = () => {
     return (
         <div className="mb-3">
-            <div className="container-fluid mb-4">
+            <div className="container-fluid mb-4 p-0">
                 <header className="careers">
                     <form className="form row py-3 ">
                         <div className="col-md-4 col-lg-3">
