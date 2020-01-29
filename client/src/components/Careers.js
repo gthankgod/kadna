@@ -1,6 +1,5 @@
 import React from 'react'
 import './Careers/Careers.css'
-import { Fragment } from 'react'
 
 const Careers = () => {
     return (
