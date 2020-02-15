@@ -13,6 +13,7 @@ import Careers from './components/Careers';
 import Service from './components/Service';
 import TeamContextProvider from './contexts/TeamContext';
 import ServiceContextProvider from './contexts/ServiceContext';
+import Clients from './components/Clients';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route exact path="/service/:service" component={Service} />
               <Route exact path="/team" component={Team} />
               <Route exact path="/contact" component={Contact} />
+              <Route exact path="/clients" component={Clients} />
               <Route exact path="/careers" component={Careers} />
             </Switch>
             <Footer />

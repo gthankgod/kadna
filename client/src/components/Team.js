@@ -7,7 +7,7 @@ const Team = () => {
     return (
         <div className="container p-4">
             <div className="text-center mb-4">
-                <h1 className="display-4">Team Page</h1>
+                <h1 className="display-4">Board of Directors</h1>
                 <p className="lead mb-0">Meet our Awesome team</p>
             </div>
             <div className="row text-center">

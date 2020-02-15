@@ -30,7 +30,7 @@ const Footer = () => {
                             <li className="list-inline-item"><a href="https://twitter.com/KadnaLtd?s=09"><i className="fa fa-twitter" /></a></li>
                             <li className="list-inline-item"><a href="https://www.instagram.com/invites/contact/?i=1fjzqrr2jm0w8&utm_content=dca9gtl"><i className="fa fa-instagram" /></a></li>
                             <li className="list-inline-item"><a href="https://www.linkedin.com/in/kadna-ventures-438730194"><i className="fa fa-linkedin" /></a></li>
-                            <li className="list-inline-item"><a href="mailto:mailto:kadnaventuresltd@gmail.com" target="_blank"><i className="fa fa-envelope" /></a></li>
+                            <li className="list-inline-item"><a href="mailto:kadnaventuresltd@gmail.com"><i className="fa fa-envelope" /></a></li>
                         </ul>
                     </div>
                 </div>
