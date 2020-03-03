@@ -13,7 +13,7 @@ const Contact = () => {
                     <h5>Telephone :</h5>
                     <span className="mb-4">+2348039110667, +2348079453920, +2347065849957</span>
                     <h5>Email:</h5>
-                    <span className="mb-4"> kadnaventureslts@gmail.com</span>
+                    <span className="mb-4"> kadnaventuresltd@gmail.com</span>
                     <p>Feel free to reach out on us via any of the above listed mediums</p>
                 </div>
                 <div className="col-sm-6">

@@ -32,6 +32,7 @@ const Service = (props) => {
                     <h5 className="mb-3">{state.manager.name}</h5>
                     <div className="small text-uppercase mb-3">{state.manager.title}</div>
                     <div className="small text-uppercase mb-3">{state.manager.tel}</div>
+                    <div className="small text-uppercase mb-3">{state.manager.email}</div>
                 </div>
             </div>
             <div className="col-sm-5 mb-3">
